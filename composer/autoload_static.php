@@ -9,6 +9,7 @@ class ComposerStaticInitb9c6fc90964ddea4f7d0f49841ae915b
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -24,6 +25,7 @@ class ComposerStaticInitb9c6fc90964ddea4f7d0f49841ae915b
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Translation\\' => 30,
+            'Spipu\\Html2Pdf\\' => 15,
         ),
         'R' => 
         array (
@@ -34,7 +36,12 @@ class ComposerStaticInitb9c6fc90964ddea4f7d0f49841ae915b
         'P' => 
         array (
             'Psr\\SimpleCache\\' => 16,
+            'Psr\\Log\\' => 8,
             'Psr\\Container\\' => 14,
+        ),
+        'M' => 
+        array (
+            'Mpdf\\' => 5,
         ),
         'I' => 
         array (
@@ -53,6 +60,7 @@ class ComposerStaticInitb9c6fc90964ddea4f7d0f49841ae915b
         'D' => 
         array (
             'Doctrine\\Common\\Inflector\\' => 26,
+            'DeepCopy\\' => 9,
         ),
         'A' => 
         array (
@@ -77,6 +85,10 @@ class ComposerStaticInitb9c6fc90964ddea4f7d0f49841ae915b
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
         ),
+        'Spipu\\Html2Pdf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spipu/html2pdf/src',
+        ),
         'ReallySimpleJWT\\Helper\\' => 
         array (
             0 => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Helper',
@@ -93,9 +105,17 @@ class ComposerStaticInitb9c6fc90964ddea4f7d0f49841ae915b
         array (
             0 => __DIR__ . '/..' . '/psr/simple-cache/src',
         ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'Mpdf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mpdf/mpdf/src',
         ),
         'Illuminate\\Support\\' => 
         array (
@@ -120,6 +140,10 @@ class ComposerStaticInitb9c6fc90964ddea4f7d0f49841ae915b
         'Doctrine\\Common\\Inflector\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
+        ),
+        'DeepCopy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
         'Asika\\' => 
         array (
@@ -164,6 +188,11 @@ class ComposerStaticInitb9c6fc90964ddea4f7d0f49841ae915b
 
     public static $classMap = array (
         'Datamatrix' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/barcodes/datamatrix.php',
+        'FPDF_TPL' => __DIR__ . '/..' . '/setasign/fpdi/fpdf_tpl.php',
+        'FPDI' => __DIR__ . '/..' . '/setasign/fpdi/fpdi.php',
+        'FilterASCII85' => __DIR__ . '/..' . '/setasign/fpdi/filters/FilterASCII85.php',
+        'FilterASCIIHexDecode' => __DIR__ . '/..' . '/setasign/fpdi/filters/FilterASCIIHexDecode.php',
+        'FilterLZW' => __DIR__ . '/..' . '/setasign/fpdi/filters/FilterLZW.php',
         'PDF417' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/barcodes/pdf417.php',
         'QRcode' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/barcodes/qrcode.php',
         'TCPDF' => __DIR__ . '/..' . '/tecnickcom/tcpdf/tcpdf.php',
@@ -177,6 +206,8 @@ class ComposerStaticInitb9c6fc90964ddea4f7d0f49841ae915b
         'TCPDF_IMPORT' => __DIR__ . '/..' . '/tecnickcom/tcpdf/tcpdf_import.php',
         'TCPDF_PARSER' => __DIR__ . '/..' . '/tecnickcom/tcpdf/tcpdf_parser.php',
         'TCPDF_STATIC' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/tcpdf_static.php',
+        'fpdi_pdf_parser' => __DIR__ . '/..' . '/setasign/fpdi/fpdi_pdf_parser.php',
+        'pdf_context' => __DIR__ . '/..' . '/setasign/fpdi/pdf_context.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
